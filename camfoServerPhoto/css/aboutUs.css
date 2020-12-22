@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.heroImage{
+    background-image: url('img2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 550px;
+    
+}
+
+.h1{
+    text-align: center;
+    color: white;
+    padding-top: 170px ;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.margin-top{
+    margin-top: 200px;
+}
+
+
+
+
+.type-none ul li{
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+.footer-line-height{
+    line-height: 40px;
+    font-size: 18px;
+    font-family: cursive;
+    
+    
+    
+}
+
+.footer-text-color{
+    color: #d3d3d3;
+}
+
+#iimage{
+    margin-left: 55px;
+}
+
+
+#hr1{
+	height: 1.5px;
+	background-color: red;
+	width: 100px;
+	margin-top: 20px;
+	margin-bottom: 26px;
+}
+
+
+
+
+#hr2{
+	height: 1.5px;
+	background-color: red;
+	width: 100px;
+	margin-top: 20px;
+	margin-bottom: 26px;
+}
+
+
+
+#hr3{
+
+	height: 2px;
+	width: 100px;
+	background-color: red;
+}
+
+
+
+
+.footer-line-height{
+    line-height: 40px;
+    font-size: 17px;
+     width: 1345px; 
+     height: 180px;
+     font-family: cursive;
+    
+    
+}
+
+ .footer-text-color{
+    color: #d3d3d3;
+}
+
+#navMargin{
+    margin-left:25px ;
+    margin-right:25px ;
+
+}
+
+#findAnything{
+font-weight: 600;
+font-size: 13px;
+letter-spacing: 0.5px;
+margin-left: 4px;
+}
+
+h5{
+    color: #fb2056;
+}
+
+
+
+ul >  li{
+    list-style-type: none;
+}
+
+
+ ul ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+ul.ul li{
+    color: rd;
+    list-style-type: none;
+    margin-bottom: 2px;
+}
+
+ul.ul{
+    margin-bottom: 10px;
+}
+
+.ourCoreValuesH5{
+   font-variant: small-caps;
+   margin-top: 28px;
+ }
+
+
+
+#extraExp{
+    font-variant: small-caps;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+
+.heroImage{
+    width: 100%;
+    height: 300px;
+
+} 
+
+#whoAreWe{
+font-size: 25px;
+margin-top: -110px;
+}
+
+#camfo{
+	font-size: 25px;
+}
+
+
+
+#ourMission{
+	text-align: center;
+	margin-top: -130px;
+	font-size: 28px;
+}
+
+
+#hr1{
+	margin-left: 175px;
+	margin-top: 28px;
+	height: 1.5px;
+}
+
+
+
+#extraExp{
+
+font-size: 20px;
+text-align: center;
+margin-top: -130px;
+}
+
+
+
+#hr2{
+	height: 2px;
+	margin-left: 180px;
+	width: 90px;
+}
+
+
+#ourCoreValues{
+
+font-size: 20.5px;
+text-align: center;
+margin-top: 20px;
+font-variant: normal;
+text-transform: none;
+
+
+}
+
+
+#hr3{
+	height: 2px;
+	margin-left: 180px;
+	width: 90px;
+}
+
+
+
+#navMargin{
+    margin-left:0px ;
+    margin-right:0px ;
+
+}
+
+
+
+.footer-line-height{
+    width: 100%;
+    font-size: 15px;
+    height: 230px;
+    
+    
+}
+
+.ourCoreValuesH5{
+    text-align: center;
+    font-size:19px;
+    margin-left: -12px;
+    margin-bottom: 12px;
+
+}
+
+#extraExp{
+    font-variant: normal;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+p{
+    font-size: 14.7px;
+    font-weight: 490;
+    text-align: center;
+}
+
+ul.ul li{
+    font-size: 14.5px;
+
+}

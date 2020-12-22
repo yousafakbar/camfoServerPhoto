@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<div class="banner">
+		<video autoplay="autoplay" muted="muted" loop="loop">
+			<source src="qq1.mp4" type="video/mp4">
+		</video>
+
+		<div class="content">
+			<h1>Welcome to camfo</h1>
+			<h2>we are a team of talented photographers and designers</h2>
+			<h3>-------- J Studios and Dbnm Productions ---------</h3>
+				<button class="glow-on-hover" type="button"><a href='index.php' style="text-decoration: none; color: white;">Enter Site</a></button>
+		</div>
+	</div>
+
+
+	<style type="text/css">
+		
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+
+
+	color: white;
+}
+
+.banner{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.banner video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.content{
+	z-index: 1;
+	margin: 160px auto;
+	width: 900px;
+	text-align: center;
+}
+
+
+h1, h2 , h3{
+	color: white;
+	
+
+}
+
+h1{
+	
+	font-size: 50px;
+	text-transform: uppercase;
+
+}
+
+h2 , h3{
+	font-weight: lighter;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+button{
+	margin-top: 10px;
+	font-size: 22px;
+	font-weight: bol;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+
+h1{
+	font-size: 25px;
+}
+
+h2 , h3{
+	font-size:16px;
+	letter-spacing: 0px;
+	font-variant: normal; 
+}
+
+
+
+
+
+
+.banner video{
+	position: absolute;
+	top: 15%;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 70%;
+	pointer-events: none;
+}
+
+.banner .content{
+	margin-top: 210px;
+}
+
+button{
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: ;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+
+}
+
+
+
+.glow-on-hover {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+
+
+
+
+body{
+	background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(78,78,124,1) 97%);
+
+
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+</body>
+</html>

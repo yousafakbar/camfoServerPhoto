@@ -1,0 +1,50 @@
+#main1 {
+    padding: 0px 0px;
+    overflow: hidden;
+}
+
+#shade {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(137, 0, 255, 0.25), rgba(255, 0, 118, 0.25));
+    position: relative;
+}
+
+#img {
+    position: absolute;
+}
+
+#main {
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.46);
+}
+
+input {
+    border: 1px solid white;
+}
+
+#input {
+    border-bottom: 1px solid #717171;
+    padding: 4px;
+    padding-top: 0px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+#input:focus {
+    outline: 0px;
+    border-bottom: 2px solid red;
+}
+
+#btn {
+    width: 60%;
+    background-image: linear-gradient(rgba(137, 0, 255, 0.80), rgba(255, 0, 118, 0.80));
+    border-radius: 25px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+.signupcontainer {
+    margin-top: 70px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAMFO - Contact us</title>
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="css/contactStyle.css" />
+</head>
+
+<body>
+  <div class="heroImage">
+  	<div id="overlay-0" style="z-index: 10;"></div>
+    <nav class="navbar navbar-expand-md navbar-dark" id="navMargin" style="z-index: 111;">
+
+        <a class="navbar-brand" href="#"><h1 id="camfo" class="text-uppercase">Camfo</h1><h6 id="findAnything">Find anything at CAMFO</h6></a>
+        <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                
+                <ul class="navbar-nav ml-auto">
+        
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold" href="index.php">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold" href="aboutUs.html">About</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold" href="theme.html">Themes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold" href="Contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+    </nav>
+
+   <!-- <h1 id="contactUs" class="col-12 h1">Contact Us</h1>   -->
+    
+</div>
+    <div class="letsTalk">
+      <h3>WE'RE READY, LETS TALK.</h3>
+      <br />
+      <br><br>
+       <form method="post" autocomplete="off" name="google-sheet">
+                                <div class="form-group">
+                                    <input type="text" name="Name" class="form-control" placeholder="Your Name *"
+                                        value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Email" class="form-control" placeholder="Your Email *"
+                                        value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Message" class="form-control"
+                                        placeholder="Message*" value="" required="" style="height: 175px;" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" style="width: 100px;" />
+                                </div>
+                            </form>
+    </div>
+
+   
+
+    <div class="ContactInfo">
+      <h3>CONTACT INFO</h3>
+      <br />
+
+      <div id="emailPosition">
+      <h5>EMAIL</h5>
+      <br /><br />
+      <label class="de">yousafakbar99@gmail.com</label><br /><br />
+
+      </div>
+
+      
+      <h5>CALL US</h5>
+      <br /><br />
+      <div id="callUsPhonePosition">
+      <label>+92-3324403495</label><br /><br />
+      
+       </div>
+
+      <a href="#" class="facebook"><i style="font-size: 40px;" class="fa">&#xf230;</i></a>
+      <a href="#" class="twiter"><i style="font-size: 40px;" class="fa">&#xf099;</i></a>
+      <a href="#" class="googlePlus"><i style="font-size: 40px;" class="fa">&#xf2b3;</i></a>
+    </div>
+  </div>
+
+ 
+
+
+ <div class="container-fluid mt-5 pt-5 footer-line-height footer-text-color" style="background-color: #302D2B;">
+    
+    <div class="row">
+        <div class="col-12 text-center">Phone: +92-317-4572202, +92-333-4998059 | Email: dbm27h@gmail.com, junaid.amir077@gmail.com</div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">fatima.naqvi056@gmail.com</div>
+        
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">Copyright © 2020 Dbinm Productions</div>
+        
+    </div>
+
+</div>
+
+
+
+
+  <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyLkNPNzrobdLpsviGqewvvDbjgqlk-nVTNKYn-rEts_pJ6NZlj/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Submitting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
